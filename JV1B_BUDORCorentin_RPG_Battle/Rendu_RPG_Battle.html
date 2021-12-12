@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-image: url("https://opengameart.org/sites/default/files/styles/medium/public/battleback1_0.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .All{
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .Mechant{ 
+            align-items :flex-end;
+            flex-direction :column;
+            display: flex;
+            justify-content: center;
+
+        }
+        .Mechant img{
+            width: 15%;
+            height: 15%;
+        }
+        
+        
+        .Hero{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        } 
+    
+        .Hero img {
+            width: 15%;
+            height: 15%;
+        }
+    
+        .All{
+            justify-content: space-around;
+            display :flex;
+            flex-direction: row-reverse;
+            align-items: center;
+    
+        }
+
+        table, th, td {
+            border : 5px solid rgba(179, 40, 40, 0.596);
+            font-size:20px;
+            justify-content: flex-start;
+
+        }
+
+        table {
+            display: flex;
+            text-align: flex-start;
+            justify-content: center;
+        }
+
+        .ChoixAction{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            height: 120%;
+        }
+
+        .PV_Heros{
+        width: 80px;
+        border: 10px;
+        padding: 5px 20px;
+        border: 10px black;
+        color: rgb(255, 255, 255);
+        transition: 0.5s;
+        background-color: rgba(95, 57, 57, 0.5);
+
+        display: flex;
+        align-self: center;
+        justify-content: space-between;
+
+    }
+
+        .PV_Monstre{
+            width: 80px;
+        border: 10px;
+        padding: 5px 20px;
+        border: 10px black;
+        color: rgb(255, 255, 255);
+        transition: 0.5s;
+        background-color: rgba(226, 21, 21, 0.5);
+
+        display: flex;
+        align-self: center;
+        justify-content: space-between;
+
+        }
+
+        .PV_Perso{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+
+    
+
+    </style>
+
+    <body>
+        <div class =All>
+            <div class=Mechant>
+                <img src="Guerrier_Vilain.png" id="Mechant_1">
+                <img src="Chef_Vilain.png" id="Chef_Mechant">
+                <img src="Second_Guerrier_Vilain.png" id="Mechant_2">
+            </div>
+            
+            <div class= "ChoixAction">
+                <button id="Choix_Atk">Attaquer</button>
+                <button id="Choix_Def">Défendre</button>
+                <button id="Choix_Atk_Spe">Attaque spécial</button>
+                <button id="Choix_Fin_Tour">Fin de Tour</button>
+            </div>
+
+            <div class=Hero>
+            <img src="Archer_Heros.png" id="Archer">
+            <img src="Cochon_Heros.png" id="Cochon">
+            <img src="Guerrier_Heros.png" id="Guerrier">
+            <img src="Geant_Heros.png" id="Geant">
+
+            </div>
+            
+        </div>
+        <table>
+            <tr>
+                <th>Heros</th>
+                <th>Mechant</th>
+            </tr>
+            <tr>
+                <td>Archer</td>
+                <td>Mechant 1</td>
+            </tr>
+            <tr>
+                <td>Cochon</td>
+                <td>Boss Mechant</td>
+            </tr>
+            <tr>
+                <td>Guerrier</td>
+                <td>Mechant 2</td>
+            </tr>
+            <tr>
+                <td>Geant</td>
+            </tr>
+
+        
+        </table>
+        
+        <div class =PV_Perso>   
+            <div class="PV_Heros" id="PVH1">
+                <div class="PV"><span id=PV_Heros1>63</span>/80</div>
+            </div>
+            <div class="PV_Heros" id="PVH2">
+                <div class="PV"><span id=PV_Heros2>69</span>/75</div>
+            </div>
+            <div class="PV_Heros" id="PVH3">
+                <div class="PV"><span id=PV_Heros3>80</span>/100</div>
+            </div>
+            <div class="PV_Heros" id="PVH4">
+                <div class="PV"><span id=PV_Heros4>180</span>/250</div>
+            </div>
+
+            <div class="PV_Monstre" id="PVM1">
+                <div class="PV"><span id=PV_Mechant1>86</span>/200</div>
+            </div>
+            <div class="PV_Monstre" id="PVM2">
+                <div class="PV"><span id=PV_Mechant2>256</span>/400</div>
+            </div>
+            <div class="PV_Monstre" id="PVM3">
+                <div class="PV"><span id=PV_Mechant3>127</span>/200</div>
+            </div>
+        </div>     
+        
+        
+        
+
+        <script src="Java_RPG.js"async></script>
+    </body>
+</html>
